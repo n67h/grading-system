@@ -165,7 +165,108 @@
             // if all the inputs are valid, then create the account for user and send email to verify their account
             if(!empty($first_name) && !empty($last_name) && !empty($lrn) && !empty($birthdate) && !empty($email) && !empty($password) && !empty($repeat_password) && firstnameInvalid($first_name) === false && lastnameInvalid($last_name) === false && emailInvalid($email) === false && emailExists($conn, $email) === false && passwordInvalid($password) === false && passwordRepeatInvalid($repeat_password) === false && passwordMatch($password, $repeat_password) === false && $vkey != "") {
                 createUser($conn, $year_level, $lrn, $first_name, $last_name, $middle_name, $gender, $birthdate, $email, $password, $vkey);
+                $last_insert_id = mysqli_insert_id($conn);
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 1);";
+                mysqli_query($conn, $sql);
 
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 1);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 2);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 3);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 4);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 5);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 6);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 7);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 1, 8);";
+                mysqli_query($conn, $sql);
+
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 1);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 2);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 3);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 4);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 5);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 6);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 7);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 2, 8);";
+                mysqli_query($conn, $sql);
+
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 1);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 2);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 3);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 4);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 5);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 6);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 7);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 3, 8);";
+                mysqli_query($conn, $sql);
+
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 1);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 2);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 3);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 4);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 5);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 6);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 7);";
+                mysqli_query($conn, $sql);
+
+                $sql = "INSERT INTO tbl_grades (student_id, year_level_id, subject_id) VALUES ($last_insert_id, 4, 8);";
+                mysqli_query($conn, $sql);
                 header('location: register.php?register=success');
                 die();
                 
