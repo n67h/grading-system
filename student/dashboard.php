@@ -13,6 +13,7 @@
         require_once 'sidebar.php';
     ?>
         <div class="container mt-5">
+            <!-- dito yung codes ilalagay -->
             <h1>test</h1>        
         </div>
     <?php
