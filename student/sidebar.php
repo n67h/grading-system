@@ -34,6 +34,7 @@
                                     $first_name = $row['first_name'];
                                     $last_name = $row['last_name'];
                                     $gender = $row['gender'];
+                                    $year_level = $row['year_level'];
                                 }
                                 if($gender == 'Male'){
                                     echo '<img class="text-white rounded-circle" src="../assets/images/male-icon.png" alt="" style="width: 20%; height: 30%;">';
@@ -50,10 +51,10 @@
                 <div class="text-white">
                     <hr class="mx-2">
                 </div>
-                <li class=""><a href="category.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                <li class=""><a href="category.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-chart-bar"></i> Grades</a></li>
-                <li class=""><a href="category.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-id-card"></i> Profile</a></li>
-                <li class=""><a href="category.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+                <li class=""><a href="dashboard.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li class=""><a href="grades.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-chart-bar"></i> Grades</a></li>
+                <li class=""><a href="profile.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-id-card"></i> Profile</a></li>
+                <li class=""><a href="about-us.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
                 
 
                 <div class="text-white">
