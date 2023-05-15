@@ -6,7 +6,7 @@ body {
 
 /*====================START OF ADMIN SIDEBAR====================*/
 #sidebar {
-    background-color: #292b2c;
+    background-color: peachpuff;
     min-width: 250px;
     max-width: 250px;
     transition: all 0.4s;
@@ -18,12 +18,12 @@ body {
 }
 
 .sidebar li.active {
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 8px;
 }
 
 .sidebar li.active a, .sidebar li.active a:hover {
-    color: #292b2c;
+    color: white;
 }
 
 .sidebar li a {
@@ -31,13 +31,14 @@ body {
 }
 
 .sidebar li a:hover {
-    background-color: #eee;
+    background-color: white;
     border-radius: 8px;
-    color: #292b2c;
+    color: white;
 }
 
 .admin-dropdown:hover {
     background-color: white;
+    color: white;
 }
 
 @media(max-width: 767px) {
