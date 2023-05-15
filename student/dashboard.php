@@ -12,9 +12,8 @@
     <?php
         require_once 'sidebar.php';
     ?>
-        <div class="container">
-            <div class="row mb-5 mt-5">
-        
+        <div class="container mt-5">
+            <h1>test</h1>        
         </div>
     <?php
         require_once 'scripts.php';
