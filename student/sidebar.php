@@ -18,7 +18,7 @@
         <!-- start of sidebar -->
         <div class="sidebar" id="sidebar">
             <div class="header-box px-2 pt-3 pb-2 d-flex justify-content-between">
-                <h1 class="fs-4"><a href="dashboard.php" class="text-decoration-none"><span class="bg-white text-dark rounded shadow px-2 me-2 p-1">JCMPHS</span><span class="text-white">Student</span></a></h1>
+                <h1 class="fs-4"><a href="dashboard.php" class="text-decoration-none"><span class="bg-dark text-white rounded shadow px-2 me-2 p-1">JCMPHS</span><span class="text-dark">Student</span></a></h1>
                        
                 <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
@@ -41,7 +41,7 @@
                                 }elseif($gender == 'Female'){
                                     echo '<img class="text-white rounded-circle" src="../assets/images/female-icon.png" alt="" style="width: 20%; height: 30%;">';
                                 }
-                                echo '<li class="px-3 py-2 d-block text-white">' .$first_name. ' ' .$last_name. '</li>';
+                                echo '<li class="px-3 py-2 d-block text-dark">' .$first_name. ' ' .$last_name. '</li>';
                             }else{
                                 echo 'tests';
                             }
@@ -51,18 +51,18 @@
                 <div class="text-white">
                     <hr class="mx-2">
                 </div>
-                <li class=""><a href="dashboard.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-                <li class=""><a href="grades.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-regular fa-chart-bar"></i> Grades</a></li>
-                <li class=""><a href="profile.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-id-card"></i> Profile</a></li>
-                <li class=""><a href="about-us.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+                <li class=""><a href="dashboard.php" class="text-decoration-none px-3 py-2 d-block text-dark"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li class=""><a href="grades.php" class="text-decoration-none px-3 py-2 d-block text-dark"><i class="fa-regular fa-chart-bar"></i> Grades</a></li>
+                <li class=""><a href="profile.php" class="text-decoration-none px-3 py-2 d-block text-dark"><i class="fa-solid fa-id-card"></i> Profile</a></li>
+                <li class=""><a href="about-us.php" class="text-decoration-none px-3 py-2 d-block text-dark"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
                 
 
-                <div class="text-white">
+                <div class="text-dark">
                     <hr class="mx-2">
                 </div>
             </ul>
             <ul class="list-unstyled px-2">
-                <li class=""><a href="includes/logout.inc.php" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-right-from-bracket"></i> Log out</a></li>
+                <li class=""><a href="includes/logout.inc.php" class="text-decoration-none px-3 py-2 d-block text-dark"><i class="fa-solid fa-right-from-bracket"></i> Log out</a></li>
             </ul>
         </div>
         <!-- end of sidebar -->
@@ -72,7 +72,7 @@
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between d-md-none d-block">
-                        <a class="navbar-brand fs-4" href="#">test</a>
+                        <a class="navbar-brand fs-4" href="#">JCMPHS</a>
                         <button class="btn px-1 py-0 open-btn"><i class="fa-solid fa-bars-staggered"></i></button>
                     </div>
                     
