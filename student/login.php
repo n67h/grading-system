@@ -106,15 +106,15 @@
                             <label for="password">Password</label>
                         </div>
                         <div class="d-grid gap-2 mb-3">
-                            <button type="submit" name="login" class="btn btn-dark btn-lg border-0 rounded-0">Log in</button>
+                            <button type="submit" name="login" class="btn btn-warning btn-lg border-0 rounded-0">Log in</button>
                         </div>
                         <?php
                             $error_message = '';
                             if(isset($_GET['error'])){
                                 if($_GET['error'] === 'emptyfields'){
                                     $error_message = 'All fields are required.';
-                                }elseif($_GET['error'] === 'invalidusername'){
-                                    $error_message = 'Invalid username.';
+                                }elseif($_GET['error'] === 'invalidemail'){
+                                    $error_message = 'Invalid email.';
                                 }elseif($_GET['error'] === 'invalidpassword'){
                                     $error_message = 'Invalid password.';
                                 }elseif($_GET['error'] === 'test'){
@@ -124,6 +124,7 @@
                         ?>
                         <h6 class="text-danger text-center"><?= $error_message; ?></h6>
                     </form>
+                    <a href="register.php" class="text-align-center">New to JCMPHS?</a>
                 </div>
             </div>
         </div>
