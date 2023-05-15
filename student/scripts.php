@@ -12,6 +12,18 @@
     <!-- jquery datatable js cdn -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
     <script>
+       $(document).ready( function () {
+            $('#datatable').DataTable({
+                "responsive": false, 
+                "lengthChange": true, 
+                "autoWidth": false,
+                "searching": true,
+                "paging": true,
+                "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
+                "iDisplayLength": 10,
+                "ordering": true,
+            });
+        } );
     </script>
 </body>
 </html>
