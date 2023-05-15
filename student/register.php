@@ -282,7 +282,6 @@
                 <div class="row mb-5">
                     <div class="col-sm-12 mb-5">
                         <button type="submit" name="register" class="btn btn-warning btn-lg" style="width: 100%;">Register</button>
-                        <p class="teste" style="">TEST</p>
                     </div>
                 </div>
             </form>
