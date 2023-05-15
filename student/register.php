@@ -14,7 +14,8 @@
     <!-- latest bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- custom css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css?<?php echo time();?>" />
 </head>
 <body>
     <?php
@@ -281,6 +282,7 @@
                 <div class="row mb-5">
                     <div class="col-sm-12 mb-5">
                         <button type="submit" name="register" class="btn btn-warning btn-lg" style="width: 100%;">Register</button>
+                        <p class="teste" style="">TEST</p>
                     </div>
                 </div>
             </form>
